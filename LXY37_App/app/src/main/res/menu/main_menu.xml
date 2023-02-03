@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/main_menu_0"
+        android:icon="@drawable/search"
+        android:title="搜索"
+        app:showAsAction="ifRoom|withText"
+        app:actionLayout="@layout/searchview"/>
+
+    <item android:id="@+id/main_menu_1"
+        android:icon="@drawable/service"
+        android:title="客服"
+        app:showAsAction="ifRoom|withText">
+        <menu>
+            <item android:id="@+id/main_menu_1_0"
+                android:icon="@drawable/phone"
+                android:title="电话"/>
+        </menu>
+    </item>
+    <item android:id="@+id/main_menu_2"
+        android:icon="@drawable/setting"
+        android:title="设置"
+        app:showAsAction="ifRoom|withText">
+    <menu>
+        <item android:id="@+id/main_menu_2_0"
+            android:icon="@drawable/quit"
+            android:title="退出登录"/>
+    </menu>
+    </item>
+</menu>

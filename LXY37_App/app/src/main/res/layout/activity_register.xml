@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/textViewUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="用户名："
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/textViewUsername"
+            android:background="@drawable/editext_selector"
+            android:gravity="left|center"
+            android:hint="请输入用户名"
+            android:inputType="textPersonName"
+            android:maxLength="11"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <TextView
+            android:id="@+id/textViewPasswordFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="密码："
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/editTextPasswordFirst"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/textViewPasswordFirst"
+            android:background="@drawable/editext_selector"
+            android:gravity="left|center"
+            android:hint="请输入密码"
+            android:inputType="textWebPassword"
+            android:maxLength="11"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+        <TextView
+            android:id="@+id/textViewPasswordSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="确认密码："
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/editTextPasswordSecond"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/textViewPasswordSecond"
+            android:background="@drawable/editext_selector"
+            android:gravity="left|center"
+            android:hint="请再次输入密码"
+            android:inputType="textWebPassword"
+            android:maxLength="11"
+            android:textColor="@color/black"
+            android:textColorHint="@color/grey"
+            android:textSize="17sp" />
+        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+    <RadioGroup android:id="@+id/radioGroup01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radioButton01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="男">
+        </RadioButton>
+        <RadioButton android:id="@+id/radioButton02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="女">
+        </RadioButton>
+    </RadioGroup>
+    </RelativeLayout>
+    <CheckBox android:id="@+id/checkBox01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="同意淘多多平台服务协议">
+    </CheckBox>
+    <CheckBox android:id="@+id/checkBox02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="同意隐私权政策">
+    </CheckBox>
+
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="注　　册"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+</LinearLayout>

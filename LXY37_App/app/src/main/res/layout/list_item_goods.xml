@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/default_goods"
+        android:background="@color/white"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:text="鸿星尔克大球鞋"
+            android:textStyle="bold"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/item_price"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:textColor="@color/red"
+                android:text="100.00" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
